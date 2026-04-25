@@ -1,0 +1,30 @@
+[
+  {
+    "quiz_id": "Q001",
+    "course_id": "C001",
+    "title": "Quiz 1 - MongoDB",
+    "passing_score": 70,
+    "max_attempts": 3,
+    "questions": [
+      {
+        "question_id": "Q1",
+        "prompt": "¿Qué define un documento?",
+        "type": "multiple_choice"
+      }
+    ]
+  },
+  {
+    "quiz_id": "Q002",
+    "course_id": "C002",
+    "title": "Quiz 1 - Cassandra",
+    "passing_score": 75,
+    "max_attempts": 2,
+    "questions": [
+      {
+        "question_id": "Q2",
+        "prompt": "¿Para qué sirve una partition key?",
+        "type": "short_answer"
+      }
+    ]
+  }
+]

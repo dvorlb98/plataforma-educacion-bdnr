@@ -1,0 +1,113 @@
+# Plataforma de Educación en Línea - Dgraph
+# Nota importante de modelado:
+# - No existe entidad Horario; el horario es atributo del Curso.
+# - No existe relación OBTIENE_CALIFICACION; la calificación se consulta
+#   en facets/atributos de ENTREGA_TAREA y REALIZA_EXAMEN.
+# - Recomendaciones se resuelven por traversal de relaciones en el grafo.
+
+# =========================
+# Predicados e índices
+# =========================
+alumno_id: string @index(exact) .
+maestro_id: string @index(exact) .
+curso_id: string @index(exact) .
+tarea_id: string @index(exact) .
+examen_id: string @index(exact) .
+categoria_id: string @index(exact) .
+aula_id: string @index(exact) .
+
+nombre: string @index(term) .
+email: string @index(exact) .
+titulo: string @index(term) .
+descripcion: string @index(fulltext) .
+categoria_nombre: string @index(exact) .
+
+# Horario como atributo de Curso (D07)
+day_of_week: string @index(exact) .
+start_time: string .
+end_time: string .
+modality: string @index(exact) .
+
+# Atributos complementarios
+difficulty_level: string @index(exact) .
+room_type: string @index(exact) .
+capacity: int .
+
+# Relaciones principales con reverse
+inscrito_en: [uid] @reverse .
+imparte: [uid] @reverse .
+entrega_tarea: [uid] @reverse .
+realiza_examen: [uid] @reverse .
+contiene_tarea: [uid] @reverse .
+pertenece_a_categoria: [uid] @reverse .
+es_prerrequisito_de: [uid] @reverse .
+se_imparte_en: [uid] @reverse .
+
+# =========================
+# Tipos
+# =========================
+type Alumno {
+  alumno_id
+  nombre
+  email
+  inscrito_en
+  entrega_tarea
+  realiza_examen
+}
+
+type Maestro {
+  maestro_id
+  nombre
+  email
+  imparte
+}
+
+type Curso {
+  curso_id
+  titulo
+  descripcion
+  day_of_week
+  start_time
+  end_time
+  modality
+  difficulty_level
+  contiene_tarea
+  pertenece_a_categoria
+  es_prerrequisito_de
+  se_imparte_en
+}
+
+type Tarea {
+  tarea_id
+  titulo
+  descripcion
+}
+
+type Examen {
+  examen_id
+  titulo
+  descripcion
+}
+
+type Categoria {
+  categoria_id
+  categoria_nombre
+}
+
+type Aula {
+  aula_id
+  nombre
+  room_type
+  capacity
+}
+
+# =========================
+# Consultas conceptuales (comentadas)
+# =========================
+# D06 (calificaciones sin relación independiente):
+# - Recuperar un Alumno y recorrer entrega_tarea y realiza_examen,
+#   leyendo facets como grade/submitted_at/status y score/attempt_date/status.
+#
+# D08 (recomendaciones):
+# - Desde Alumno -> inscrito_en -> pertenece_a_categoria <- pertenece_a_categoria <- otros cursos
+#   para sugerir cursos relacionados por categoría y conexiones del grafo.

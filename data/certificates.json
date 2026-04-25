@@ -1,0 +1,18 @@
+[
+  {
+    "certificate_id": "CERT001",
+    "user_id": "U001",
+    "course_id": "C001",
+    "course_title": "Introducción a MongoDB",
+    "issue_date": "2026-04-15T00:00:00Z",
+    "verification_code": "VER-001-MONGO"
+  },
+  {
+    "certificate_id": "CERT002",
+    "user_id": "U002",
+    "course_id": "C001",
+    "course_title": "Introducción a MongoDB",
+    "issue_date": "2026-04-18T00:00:00Z",
+    "verification_code": "VER-002-MONGO"
+  }
+]

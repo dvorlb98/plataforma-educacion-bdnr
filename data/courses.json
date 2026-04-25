@@ -1,0 +1,63 @@
+[
+  {
+    "course_id": "C001",
+    "title": "Introducción a MongoDB",
+    "description": "Fundamentos de modelado documental.",
+    "category": "Databases",
+    "language": "es",
+    "instructor_id": "M001",
+    "is_published": true,
+    "created_at": "2026-02-25T09:00:00Z",
+    "lessons": [
+      {
+        "lesson_id": "L001",
+        "title": "Documentos y colecciones",
+        "attachments": [
+          {
+            "attachment_id": "A001",
+            "title": "Guía PDF",
+            "type": "pdf",
+            "url": "https://example.edu/mongo/guia.pdf",
+            "uploaded_at": "2026-02-26T10:00:00Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course_id": "C002",
+    "title": "Modelado con Cassandra",
+    "description": "Diseño orientado a consultas temporales.",
+    "category": "Databases",
+    "language": "es",
+    "instructor_id": "M001",
+    "is_published": true,
+    "created_at": "2026-03-01T12:00:00Z",
+    "lessons": [
+      {
+        "lesson_id": "L010",
+        "title": "Partition keys y clustering",
+        "attachments": [
+          {
+            "attachment_id": "A010",
+            "title": "Ejercicios",
+            "type": "zip",
+            "url": "https://example.edu/cassandra/ejercicios.zip",
+            "uploaded_at": "2026-03-02T15:30:00Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course_id": "C003",
+    "title": "Grafos con Dgraph",
+    "description": "Modelado de relaciones y recomendaciones.",
+    "category": "Graph",
+    "language": "es",
+    "instructor_id": "M001",
+    "is_published": false,
+    "created_at": "2026-03-05T16:00:00Z",
+    "lessons": []
+  }
+]
