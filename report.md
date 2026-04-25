@@ -161,7 +161,7 @@ graph LR
 - **`connect.py`:** centraliza conexión funcional a MongoDB y Cassandra por variables de entorno/defaults.
 - **`populate.py`:** define estrategia de carga detallada sin ejecutar inserciones.
 - **`main.py`:** ofrece menú de consultas planeadas sin lógica de consulta real.
-- **Enlace pendiente al repositorio:** `TODO: agregar URL del repositorio remoto`.
+- **Enlace pendiente al repositorio:** `https://github.com/dvorlb98/plataforma-educacion-bdnr`.
 
 ## 9. Commits esperados
 
