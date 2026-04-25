@@ -1,0 +1,44 @@
+[
+  {
+    "user_id": "U001",
+    "username": "manuel_lp",
+    "email": "manuel.lp@example.com",
+    "role": "student",
+    "created_at": "2026-03-01T10:00:00Z",
+    "profile": {
+      "full_name": "Manuel Alfonso Lopez Ponce De Leon",
+      "bio": "Estudiante enfocado en analítica de datos.",
+      "interests": ["NoSQL", "Data Engineering"],
+      "preferred_language": "es",
+      "learning_goals": ["Modelar bases no relacionales"]
+    }
+  },
+  {
+    "user_id": "U002",
+    "username": "carlos_on",
+    "email": "carlos.on@example.com",
+    "role": "student",
+    "created_at": "2026-03-03T14:30:00Z",
+    "profile": {
+      "full_name": "Carlos Emiliano Olmedo Navarro",
+      "bio": "Interesado en sistemas distribuidos.",
+      "interests": ["Cassandra", "Backend"],
+      "preferred_language": "es",
+      "learning_goals": ["Optimizar consultas por tiempo"]
+    }
+  },
+  {
+    "user_id": "M001",
+    "username": "prof_data",
+    "email": "maestro.data@example.com",
+    "role": "instructor",
+    "created_at": "2026-02-20T08:00:00Z",
+    "profile": {
+      "full_name": "Instructor de Bases de Datos",
+      "bio": "Docente de plataformas educativas.",
+      "interests": ["Modelado", "Sistemas de recomendación"],
+      "preferred_language": "es",
+      "learning_goals": ["Mejorar experiencia de aprendizaje"]
+    }
+  }
+]

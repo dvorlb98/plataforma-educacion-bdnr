@@ -1,0 +1,32 @@
+[
+  {
+    "enrollment_id": "E001",
+    "user_id": "U001",
+    "course_id": "C001",
+    "course_title": "Introducción a MongoDB",
+    "completed_lessons": ["L001"],
+    "progress_percentage": 35,
+    "status": "active",
+    "last_accessed_at": "2026-04-20T08:45:00Z"
+  },
+  {
+    "enrollment_id": "E002",
+    "user_id": "U001",
+    "course_id": "C002",
+    "course_title": "Modelado con Cassandra",
+    "completed_lessons": [],
+    "progress_percentage": 10,
+    "status": "active",
+    "last_accessed_at": "2026-04-21T10:10:00Z"
+  },
+  {
+    "enrollment_id": "E003",
+    "user_id": "U002",
+    "course_id": "C001",
+    "course_title": "Introducción a MongoDB",
+    "completed_lessons": ["L001"],
+    "progress_percentage": 50,
+    "status": "active",
+    "last_accessed_at": "2026-04-19T19:30:00Z"
+  }
+]
