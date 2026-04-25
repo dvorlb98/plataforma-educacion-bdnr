@@ -4,7 +4,6 @@ Proyecto intermedio de **Bases de Datos No Relacionales** para modelar una plata
 
 **Curso:** P2026_ESI3891N  
 **Profesor:** Omar Antonio Madriz Almanza  
-**Handler de acceso de lectura:** HomerMadriz
 
 ## Integrantes
 
